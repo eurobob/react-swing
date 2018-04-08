@@ -7,7 +7,11 @@
     "lint": "eslint ./src",
     "lintfix": "eslint ./src --fix",
     "test": "mocha --compilers js:babel-register",
-    "build": "babel ./src/Swing.js --out-file ./dist/Swing.js"
+    "build": "babel ./src/Swing.js --out-file ./dist/Swing.js",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": "src/**/*.js"
   },
   "keywords": [
     "react-component",
@@ -54,7 +58,8 @@
     "react-dom": "^15.3.0",
     "react-tools": "^0.13.3",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "npm-watch": "^0.3.0"
   },
   "peerDependencies": {
     "react": "~0.14.3 || ^15.0.0 || >= 15.5.0",
